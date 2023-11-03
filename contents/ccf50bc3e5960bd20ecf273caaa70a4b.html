@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Artista – Publicar Canción</title>
+    <title>Servidor</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,14 +19,14 @@
 
       <!-- Name Title -->
 
-      <h1>Artista – Publicar Canción</h1>
+      <h1>Servidor</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLUseCase"></span>
-          UMLUseCase
+          <span class="node-icon staruml-icon icon-UMLNode"></span>
+          UMLNode
         </span>
         
       </section>
@@ -41,10 +41,10 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>Youtify</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='515b90d1a8b576e0c91d13d38e356e4d.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Plantillas</a></span>
+          <span class="label label-info"><a href='568d7d73dbbeb6473a12f4fe0b9d143b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Despliegue</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='8b4d0b979d77f9088e3aade74f3032e2.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Artista – Publicar Canción</a></span>
+          <span class="label label-info"><a href='ccf50bc3e5960bd20ecf273caaa70a4b.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Servidor</a></span>
         
       </section>
 
@@ -59,41 +59,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>Nombre	Publicar canción.
-Descripción	El artista pone todos los datos y publica una canción.
-Actores primarios	Artista.
-Actores secundarios	----
-Evento de activación	El caso de uso comienza cuando el Artista selecciona la opción de “publicar canción”.
-Precondiciones	----
-Flujo principal	
-1.	El sistema pregunta al artista los detalles de la canción a añadir (nombre, descripción, duración).
-2.	El artista introduce toda la información requerida.
-3.	El sistema valida la información recibida.
-4.	El sistema guarda la información recibida de manera temporal.
-5.	El sistema pregunta al artista por el fichero de la canción y una foto para la carátula.
-6.	El artista introduce los archivos requeridos.
-7.	El sistema valida los archivos subidos.
-8.	El sistema guarda los archivos de manera temporal.</p>
-
-<p>Extension point: añadir a disco.</p>
-
-<ol><li>El sistema añade la canción al sistema de manera permanente.</li><li>El sistema elimina la información temporal almacenada.
-Postcondiciones	El artista recibe una confirmación de haber creado la canción correctamente.
-Flujos alternativos	
-3.a El nombre introducido no es válido.
-	a1. El sistema preguntará por el nombre hasta 3 veces.
-3.b La descripción introducida no es válida.
-	b1. El sistema preguntará por la descripción hasta 3 veces.
-3.c La duración introducida no es válida.
-	c1. El sistema preguntará por la duración hasta 3 veces.</li></ol>
-
-<p>7.a El formato de la canción subida no es válido.
-	a1.  El sistema pide al artista subir un archivo distinto.
-7.b El formato de la carátula subida no es válido.
-	b1. El sistema pide al artista subir un archivo distinto.</p>
-
-<p>9.a La base de datos no se encuentra disponible.
-	a1. El sistema mantiene la información temporal y reintenta acceder 	      a la base de datos pasados 1 minuto, 5 minutos y 1 hora.</p>
+            <span class="label label-info">none</span>
           
         </div>
       </section>
@@ -146,24 +112,31 @@ Flujos alternativos
       <!-- Node -->
 
       
+        
+        
+<section class="element-list">
+    <h3>Deployed Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='87d537ad8dc27efc1e6f21bb35727a0c.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>vista .war</a></li>
+        
+        <li><a href='1d31bcfc9d8e7e572c612bd210798093.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>negocio.jar</a></li>
+        
+        <li><a href='3f3f9a31d63b1e4b7612dd3c924fd8e4.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>datos.sql</a></li>
+        
+        <li><a href='08510a5840f38599497ee8375744608b.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>cifrado.sql</a></li>
+        
+    </ul>
+</section>
+
+
+      
 
       <!-- Actor -->
 
       
 
       <!-- Use Case -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -279,7 +252,7 @@ Flujos alternativos
     
     <tr>
         <td>name</td>
-        <td>Artista – Publicar Canción</td>
+        <td>Servidor</td>
     </tr>
     
     
@@ -345,17 +318,6 @@ Flujos alternativos
     
     
     
-    
-    
-    <tr>
-        <td>extensionPoints</td>
-        <td>
-            
-        </td>
-    </tr>
-    
-    
-    
 </table>                
 
       </section>
@@ -377,6 +339,21 @@ Flujos alternativos
 
         
         
+<section class="element-list">
+    <h3>Dependants</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='87d537ad8dc27efc1e6f21bb35727a0c.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>vista .war</a></li>
+        
+        <li><a href='1d31bcfc9d8e7e572c612bd210798093.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>negocio.jar</a></li>
+        
+        <li><a href='3f3f9a31d63b1e4b7612dd3c924fd8e4.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>datos.sql</a></li>
+        
+        <li><a href='08510a5840f38599497ee8375744608b.html'><span class='node-icon staruml-icon icon-UMLArtifact'></span>cifrado.sql</a></li>
+        
+    </ul>
+</section>
+
 
       
 
@@ -384,6 +361,23 @@ Flujos alternativos
 
       
       
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='a7302e6532f074ea7c187878db4be7c5.html'><span class='node-icon staruml-icon icon-UMLDeployment'></span>(vista .war→Servidor)</a></li>
+        
+        <li><a href='fccc664218f4d2e51ba55dd605775479.html'><span class='node-icon staruml-icon icon-UMLDeployment'></span>(negocio.jar→Servidor)</a></li>
+        
+        <li><a href='0a16be5d4d2e084315f3df170785e46c.html'><span class='node-icon staruml-icon icon-UMLDeployment'></span>(datos.sql→Servidor)</a></li>
+        
+        <li><a href='16d95685a46f620393750f0cb7b80853.html'><span class='node-icon staruml-icon icon-UMLCommunicationPath'></span>(Balanceador de Carga—Servidor)</a></li>
+        
+        <li><a href='108e13ddd7ed00f694c29c543ea13bcf.html'><span class='node-icon staruml-icon icon-UMLDeployment'></span>(cifrado.sql→Servidor)</a></li>
+        
+    </ul>
+</section>
+
 
 
       <!-- Owned Elements -->

@@ -59,66 +59,45 @@
         <h3>Description</h3>
         <div>
           
-            <p>Nombre Añadir solicitud de chat con un artista.
-Descripción Al querer entablar un chat con un Artista, el Productor se lo solicita al 
-mismo en el sistema y se notifica por correo electrónico al Artista.
-Actores primarios Productor.
-Actores secundarios Artista.
-Evento de activación El caso de uso comienza cuando el productor selecciona la opción de 
-“Añadir solicitud de chat con un artista”.
-Precondiciones ----
-Flujo principal
-1. El Sistema muestra al Productor el formulario “Añadir solicitud de chat 
-con un artista”, con el campo usuario del Artista.
-2. El Productor introduce el usuario del Artista.
-3. El productor indica al Sistema que puede procesar el formulario.
-4. El Sistema confirma que el Artista es válido.
-5. El Sistema asigna la fecha actual del sistema a la solicitud.
-6. El Sistema confirma que se puede procesar la solicitud de notificación
-por correo electrónico al Artista.
-7. El Sistema notifica por correo electrónico al Artista.
-8. El Sistema añade la solicitud a la base de datos.
-9. El Sistema confirma al Productor que la solicitud ha sido correctamente 
-añadida.
-Postcondiciones La solicitud queda incorporada al sistema, por lo que posteriores visitas a 
-las solicitudes de chat del Productor y Artista deberán reflejar la existencia 
-de esta solicitud a un Artista y de un Productor respectivamente.
-Flujos alternativos
-4a. El Artista no existe en el sistema.
-1. El Sistema informa al Productor que el Artista introducido no existe 
-en el Sistema.
-2. El Productor confirma haber recibido la información.
-3. El Sistema muestra al Productor el formulario “Añadir solicitud de 
-chat con un artista”, manteniendo la información que estuviese 
-previamente escrita.
-6a. El Artista no tiene asignada una dirección de correo electrónico valida.
-1. El Sistema informa al Productor de que el Artista introducido no 
-tiene asignada una dirección de correo electrónico valida y que por 
-tanto no puede solicitar a este Artista por el momento.
-2. El Productor confirma haber recibido la información
-3. El Sistema muestra al Productor el formulario “Añadir solicitud de 
-chat con un artista”
-6b. El Artista ya tiene una solicitud del Productor realizada en los últimos 3 
-días
-4. El Sistema informa al Productor que su última solicitud a este Artista 
-fue hace menos de 3 días y no puede enviar otra solicitud hasta que 
-pase la diferencia entre la fecha actual y la fecha de la última 
-solicitud.
-ingeniería del Software Plantillas
-5. El Productor confirma haber recibido la información.
-6. El Sistema redirecciona al Productor a la sección de vista de 
-solicitudes realizadas a Artistas, remarcando la solicitud realizada 
-hace menos de 3 días.
-7a. El servidor de envió de correos no esta disponible
-7. El Sistema informa al Productor de que el servidor de envió de 
-correos no está temporalmente disponible.
-8. El Productor confirma haber recibido la información.
-9. El Sistema redirecciona al Productor al inicio de la aplicación.
-8a. La base de datos no está disponible.
-10. El Sistema informa al Productor de que la base de datos no está 
-temporalmente disponible.
-11. El Productor confirma haber recibido la información.
-12. El Sistema redirecciona al Productor al inicio de la aplicación.</p>
+            <p>Nombre	Añadir solicitud de chat con un artista.
+Descripción	Al querer entablar un chat con un Artista, el Productor se lo solicita al mismo en el sistema y se notifica por correo electrónico al Artista.
+Actores primarios	Productor.
+Actores secundarios	----
+Evento de activación	El caso de uso comienza cuando el productor selecciona la opción de “Añadir solicitud de chat con un artista”.
+Precondiciones	----
+Flujo principal	
+1.	El Sistema muestra al Productor el formulario “Añadir solicitud de chat con un artista”, con el campo usuario del Artista.
+2.	El Productor introduce el usuario del Artista.
+3.	El productor indica al Sistema que puede procesar el formulario.
+4.	El Sistema confirma que el Artista es válido.
+5.	El Sistema asigna la fecha actual del sistema a la solicitud.
+6.	El Sistema confirma que se puede procesar la solicitud de notificación por correo electrónico al Artista.
+7.	El Sistema notifica por correo electrónico al Artista.
+8.	El Sistema añade la solicitud a la base de datos.
+9.	El Sistema confirma al Productor que la solicitud ha sido correctamente añadida.</p>
+
+<p>Postcondiciones	La solicitud queda incorporada al sistema, por lo que posteriores visitas a las solicitudes de chat del Productor y Artista deberán reflejar la existencia de esta solicitud a un Artista y de un Productor respectivamente.
+Flujos alternativos	
+4a. El Artista no existe en el sistema.</p>
+
+<ol><li>El Sistema informa al Productor que el Artista introducido no existe en el Sistema.</li><li>El Productor confirma haber recibido la información.</li><li>El Sistema muestra al Productor el formulario “Añadir solicitud de chat con un artista”, manteniendo la información que estuviese previamente escrita.</li></ol>
+
+<p>6a. El Artista no tiene asignada una dirección de correo electrónico valida.
+1.	El Sistema informa al Productor de que el Artista introducido no tiene asignada una dirección de correo electrónico valida y que por tanto no puede solicitar a este Artista por el momento.
+2.	El Productor confirma haber recibido la información
+3.	El Sistema muestra al Productor el formulario “Añadir solicitud de chat con un artista”</p>
+
+<p>6b. El Artista ya tiene una solicitud del Productor realizada en los últimos 3 días</p>
+
+<ol><li>El Sistema informa al Productor que su última solicitud a este Artista fue hace menos de 3 días y no puede enviar otra solicitud hasta que pase la diferencia entre la fecha actual y la fecha de la última solicitud.</li><li>El Productor confirma haber recibido la información.</li><li>El Sistema redirecciona al Productor a la sección de vista de solicitudes realizadas a Artistas, remarcando la solicitud realizada hace menos de 3 días.</li></ol>
+
+<p>7a. El servidor de envió de correos no está disponible</p>
+
+<ol><li>El Sistema informa al Productor de que el servidor de envió de correos no está temporalmente disponible.</li><li>El Productor confirma haber recibido la información.</li><li>El Sistema redirecciona al Productor al inicio de la aplicación.</li></ol>
+
+<p>8a. La base de datos no está disponible.</p>
+
+<ol><li>El Sistema informa al Productor de que la base de datos no está temporalmente disponible.</li><li>El Productor confirma haber recibido la información.</li><li>El Sistema redirecciona al Productor al inicio de la aplicación.</li></ol>
           
         </div>
       </section>

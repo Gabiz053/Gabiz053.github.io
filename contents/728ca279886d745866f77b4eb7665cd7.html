@@ -59,46 +59,37 @@
         <h3>Description</h3>
         <div>
           
-            <p>Nombre Crear Playlist.
-Descripción El oyente crea una playlist.
-Actores primarios Oyente.
-Actores secundarios ----
-Evento de activación El caso de uso se inicia cuando el usuario seleccione la opción de crear 
-playlist.
-Precondiciones ----
-Flujo principal
-1. El sistema le pide al usuario los datos relevantes para la creación de la 
-playlist (Título, descripción, foto de playlist, géneros principales…).
-2. El usuario introduce la información solicitada por el sistema.
-3. El sistema valida la información introducida por el usuario.
-4. El sistema pregunta al usuario si quiere hacer la playlist pública o 
-privada.
-5. El usuario responde a la pregunta realizada por el sistema.
-6. El sistema procesa la respuesta del usuario.
-Extension point: añadir canción a playlist.
-7. El usuario confirma la creación de la playlist.
-8. El sistema procesa la confirmación del usuario.
-9. El sistema confirma que la playlist se ha creado correctamente.
-10. El sistema notifica a los seguidores de dicho usuario de la creación de la 
-playlist.
-Postcondiciones Una nueva playlist para el usuario ha sido creada.
-Flujos alternativos
-3.a El nombre la playlist no es válido (ya existe una playlist con dicho 
-nombre).
-a1. El sistema informa al Usuario que el nombre ya existe.
-a2. El usuario confirma haber recibido la notificación.
-a3. El sistema pide al Usuario que introduzca un nuevo nombre, 
-mostrándole el formulario de creación de la playlist manteniendo 
-la información previamente escrita.
-3.b La imagen introducida por el usuario no tiene el formato adecuado.
-b1. El sistema informa al usuario de que el formato no es apto y 
-pide que introduzca de nuevo una nueva imagen.
-3.c La imagen introducida por el usuario utiliza contenido sensible.
-c1. El sistema informa al usuario que la imagen no puede ser 
-procesada debido a su contenido, y pide que introduzca una 
-imagen distinta. 
-El usuario cancela la opción de crear la playlist.
- El sistema sale del proceso de creación de la playlist. </p>
+            <p>Nombre	Crear Playlist.
+Descripción	El oyente crea una playlist.
+Actores primarios	Oyente.
+Actores secundarios	----
+Evento de activación	El caso de uso se inicia cuando el Oyente seleccione la opción de crear playlist.
+Precondiciones	----
+Flujo principal	
+1.	El sistema le pide al oyente los datos relevantes para la creación de la playlist (Título, descripción, foto de playlist, géneros principales…).
+2.	El oyente introduce la información solicitada por el sistema.
+3.	El sistema valida la información introducida por el oyente.
+4.	El sistema pregunta al oyente si quiere hacer la playlist pública o privada.
+5.	El oyente responde a la pregunta realizada por el sistema.
+6.	El sistema crea la playlist.
+Extension point: añadir a playlist.</p>
+
+<ol><li>El oyente confirma la creación de la playlist.</li><li>El sistema guarda la playlist en el sistema.</li><li>El sistema confirma que la playlist se ha creado correctamente.</li><li>El sistema notifica a los seguidores de dicho oyente de la creación de la playlist.</li></ol>
+
+<p>Postcondiciones	Una nueva playlist para el oyente ha sido creada.
+Flujos alternativos	
+3.a El nombre la playlist no es válido (ya existe una playlist con dicho nombre).
+	a1. El sistema informa al oyente que el nombre ya existe.
+	a2. El oyente confirma haber recibido la notificación.
+	a3. El sistema pide al oyente que introduzca un nuevo nombre, 	mostrándole el formulario de creación 	de la playlist manteniendo 	la información previamente escrita.</p>
+
+<p>3.b La imagen introducida por el oyente no tiene el formato adecuado.
+ 	b1. El sistema informa al oyente de que el formato no es apto y 	pide que introduzca de nuevo una nueva imagen.</p>
+
+<p>3.c La imagen introducida por el oyente utiliza contenido sensible.
+	c1. El sistema informa al oyente que la imagen no puede ser 	procesada debido a su contenido, y pide que introduzca una 	imagen distinta. 
+El oyente cancela la opción de crear la playlist. 
+            El sistema sale del proceso de creación de la playlist. </p>
           
         </div>
       </section>

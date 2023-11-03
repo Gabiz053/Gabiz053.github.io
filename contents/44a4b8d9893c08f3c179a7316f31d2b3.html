@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Artista – Publicar Canción</title>
+    <title>servidores</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
 <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
@@ -19,15 +19,17 @@
 
       <!-- Name Title -->
 
-      <h1>Artista – Publicar Canción</h1>
+      <h1>servidores</h1>
 
       <!-- Type and Stereotype -->
 
       <section style="margin-top: .5em;">
         <span class="alert alert-info">
-          <span class="node-icon staruml-icon icon-UMLUseCase"></span>
-          UMLUseCase
+          <span class="node-icon staruml-icon icon-UMLAssociationEnd"></span>
+          UMLAssociationEnd
         </span>
+        
+          <span style="margin-left: 10px" class="alert alert-info">«»</span>
         
       </section>
 
@@ -41,10 +43,16 @@
           <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>Youtify</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='515b90d1a8b576e0c91d13d38e356e4d.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Plantillas</a></span>
+          <span class="label label-info"><a href='568d7d73dbbeb6473a12f4fe0b9d143b.html'><span class='node-icon staruml-icon icon-UMLModel'></span>Despliegue</a></span>
         
           <span>::</span>
-          <span class="label label-info"><a href='8b4d0b979d77f9088e3aade74f3032e2.html'><span class='node-icon staruml-icon icon-UMLUseCase'></span>Artista – Publicar Canción</a></span>
+          <span class="label label-info"><a href='fcfbfcc18056aabd06eb195287487cf1.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Balanceador de Carga</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='16d95685a46f620393750f0cb7b80853.html'><span class='node-icon staruml-icon icon-UMLCommunicationPath'></span>(Balanceador de Carga—Servidor)</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='44a4b8d9893c08f3c179a7316f31d2b3.html'><span class='node-icon staruml-icon icon-UMLAssociationEnd'></span>servidores</a></span>
         
       </section>
 
@@ -59,41 +67,7 @@
         <h3>Description</h3>
         <div>
           
-            <p>Nombre	Publicar canción.
-Descripción	El artista pone todos los datos y publica una canción.
-Actores primarios	Artista.
-Actores secundarios	----
-Evento de activación	El caso de uso comienza cuando el Artista selecciona la opción de “publicar canción”.
-Precondiciones	----
-Flujo principal	
-1.	El sistema pregunta al artista los detalles de la canción a añadir (nombre, descripción, duración).
-2.	El artista introduce toda la información requerida.
-3.	El sistema valida la información recibida.
-4.	El sistema guarda la información recibida de manera temporal.
-5.	El sistema pregunta al artista por el fichero de la canción y una foto para la carátula.
-6.	El artista introduce los archivos requeridos.
-7.	El sistema valida los archivos subidos.
-8.	El sistema guarda los archivos de manera temporal.</p>
-
-<p>Extension point: añadir a disco.</p>
-
-<ol><li>El sistema añade la canción al sistema de manera permanente.</li><li>El sistema elimina la información temporal almacenada.
-Postcondiciones	El artista recibe una confirmación de haber creado la canción correctamente.
-Flujos alternativos	
-3.a El nombre introducido no es válido.
-	a1. El sistema preguntará por el nombre hasta 3 veces.
-3.b La descripción introducida no es válida.
-	b1. El sistema preguntará por la descripción hasta 3 veces.
-3.c La duración introducida no es válida.
-	c1. El sistema preguntará por la duración hasta 3 veces.</li></ol>
-
-<p>7.a El formato de la canción subida no es válido.
-	a1.  El sistema pide al artista subir un archivo distinto.
-7.b El formato de la carátula subida no es válido.
-	b1. El sistema pide al artista subir un archivo distinto.</p>
-
-<p>9.a La base de datos no se encuentra disponible.
-	a1. El sistema mantiene la información temporal y reintenta acceder 	      a la base de datos pasados 1 minuto, 5 minutos y 1 hora.</p>
+            <span class="label label-info">none</span>
           
         </div>
       </section>
@@ -114,26 +88,6 @@ Flujos alternativos
       <!-- Classifier -->
 
       
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-
-        
-        
-
-      
 
       <!-- Interface -->
 
@@ -152,18 +106,6 @@ Flujos alternativos
       
 
       <!-- Use Case -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
@@ -279,7 +221,7 @@ Flujos alternativos
     
     <tr>
         <td>name</td>
-        <td>Artista – Publicar Canción</td>
+        <td>servidores</td>
     </tr>
     
     
@@ -293,8 +235,17 @@ Flujos alternativos
     
     
     <tr>
+        <td>reference</td>
+        <td><a href='ccf50bc3e5960bd20ecf273caaa70a4b.html'><span class='node-icon staruml-icon icon-UMLNode'></span>Servidor</a></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
         <td>stereotype</td>
-        <td><span class='label label-info'>null</span></td>
+        <td></td>
     </tr>
     
     
@@ -303,25 +254,51 @@ Flujos alternativos
     
     <tr>
         <td>visibility</td>
-        <td>public</td>
+        <td>private</td>
     </tr>
     
     
     
     
     
-    
-    
-    
-    
-    
+    <tr>
+        <td>navigable</td>
+        <td>unspecified</td>
+    </tr>
     
     
     
     
     
     <tr>
-        <td>isAbstract</td>
+        <td>aggregation</td>
+        <td>none</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>multiplicity</td>
+        <td>2..*</td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>defaultValue</td>
+        <td></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isReadOnly</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -330,7 +307,7 @@ Flujos alternativos
     
     
     <tr>
-        <td>isFinalSpecialization</td>
+        <td>isOrdered</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -339,7 +316,7 @@ Flujos alternativos
     
     
     <tr>
-        <td>isLeaf</td>
+        <td>isUnique</td>
         <td><span class='label label-info'>false</span></td>
     </tr>
     
@@ -348,10 +325,37 @@ Flujos alternativos
     
     
     <tr>
-        <td>extensionPoints</td>
+        <td>isDerived</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>isID</td>
+        <td><span class='label label-info'>false</span></td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>qualifiers</td>
         <td>
             
         </td>
+    </tr>
+    
+    
+    
+    
+    
+    <tr>
+        <td>ownerAttribute</td>
+        <td><span class='label label-info'>null</span></td>
     </tr>
     
     
@@ -365,18 +369,6 @@ Flujos alternativos
       
 
       <!-- Constraints, Dependencies, Dependants -->
-
-      
-        
-        
-
-
-        
-        
-
-
-        
-        
 
       
 
